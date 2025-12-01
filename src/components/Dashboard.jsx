@@ -47,7 +47,7 @@ const Dashboard = () => {
         formDataToSend.append('images', image)
       })
 
-      const response = await axios.post('http://localhost:3000/api/products', formDataToSend, {
+      const response = await axios.post('https://rased-backend.vercel.app/api/products', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
